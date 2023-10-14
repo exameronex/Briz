@@ -1,0 +1,1115 @@
+@font-face {
+	font-family: "Rosa Marena";
+	src: url("../fonts/rosa-marena/rosa-marena.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/rosa-marena/rosa-marena.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/rosa-marena/rosa-marena.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/rosa-marena/rosa-marena.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/rosa-marena/rosa-marena.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/rosa-marena/rosa-marena.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/rosa-marena/rosa-marena.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: local('Minion Pro Regular'), local('Minion-Pro-Regular'),
+        url('../fonts/Minion Pro/MinionPro-Regular.woff2') format('woff2'),
+        url('../fonts/Minion Pro/MinionPro-Regular.woff') format('woff'),
+        url('../fonts/Minion Pro/MinionPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: local('Trajan Pro 3 Regular'), local('Trajan-Pro-3-Regular'),
+        url('../fonts/Trajan Pro 3/TrajanPro3Regular.woff2') format('woff2'),
+        url('../fonts/Trajan Pro 3/TrajanPro3Regular.woff') format('woff'),
+        url('../fonts/Trajan Pro 3/TrajanPro3Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cony Regular';
+    src: url('../fonts/Cony/Cony.eot');
+    src: url('../fonts/Cony/Cony.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cony/Cony.woff') format('woff'),
+    url('../fonts/Cony/Cony.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif; 
+}
+
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto
+}
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    background-color: #000610;
+    padding-top: 45px;
+    padding-bottom: 25px;
+}
+
+.header-top {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.logo {
+    display: inline-block;
+    width: 115px;    
+}
+
+.header-burger {
+    display: none;
+}
+
+.logo-and-burger {
+    margin-right: auto;
+}
+
+.social-search {
+    display: flex;
+}
+
+.social-list,
+.search-delivery {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list {
+    position: relative;
+    margin-right: 23px;
+}
+
+.social-list::after {
+    content: "";
+    right: -12px;
+    top: 0px;
+    position: absolute;
+    height: 21px;
+    width: 1px;
+    background-color: white;
+}
+
+.search-delivery {
+    margin-right: 65px;
+}
+
+.social-list li:not(:last-child),
+.search-delivery li:not(:last-child){
+    margin-right: 7px;
+}
+
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif; 
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.site-navigation li {
+    position: relative;
+}
+
+.site-navigation li:after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    width: 1px;
+    height: 21px;  
+    background-color: white;
+}
+
+.site-navigation li:last-child:after {
+    content: "";
+    position: relative;
+}
+
+.site-navigation a {
+    color: #ffffff;
+}
+
+.phone {
+    font-family: "Trajan Pro 3";
+}
+
+.phone,
+.adress {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    background-color: #000610;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    background: url("../img/sea.jpg") center no-repeat;
+    padding-top: 120px;
+    background-size: 100% 100%;
+    max-height: 530px;
+    margin-bottom: 100px;
+}
+
+.intro-container {
+    text-align: center;
+}
+
+.wish {
+    font-size: 65px;
+    color: white;
+    font-family: "Rosa Marena";
+}
+
+.services-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #103d49;
+    border: 8px solid #2b3038;
+    border-radius: 50%;
+    position: relative;
+    width: 188px;
+    height: 188px;
+}
+
+.service-item img {
+    left: 50%;
+    position: absolute;
+    stroke-width: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.announcement {
+    margin-bottom: 75px;
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
+.announcement img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    padding-bottom: 56px;
+}
+
+.description-item {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.description-item {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.description-item:last-child {
+    margin-bottom: 0px;
+}
+
+.description-column-left {
+    position: relative;
+    width: 544px;
+    padding-left: 80px;
+    margin-right: 20px;
+    color: white;
+}
+
+.description-column-left:after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    background-color: white;
+    height: 1px;
+    bottom: 0;
+}
+
+.title-border {
+    font-family: "Minion Pro";
+    color: white;
+    font-size: 16px;
+    width: 332px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 11px 0;
+    text-transform: uppercase;
+}
+
+.description-text {
+    font-family: "Minion Pro";
+    font-size: 18px;
+    text-align: justify;
+}
+
+.description-list {
+    margin: 0;
+    padding: 0;
+}
+
+.description-list img {
+    max-width: 430px;
+    padding-right: 59px;
+}
+
+.footer {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    background-color: #103d49;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-column-left {
+    width: 530px;
+    padding-left: 80px;
+    margin-right: 85px;
+}
+
+.footer .site-navigation {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.footer .site-navigation li:after {
+    top: 0px;
+    right: -7px;
+    height: 12px; 
+}
+
+.footer .search-delivery {
+    margin: 0;
+}
+
+.footer-middle {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer-middle .logo {
+    margin-right: auto;
+}
+
+.map {    
+    width: 366px;
+}
+
+/* delivery.html */
+.delivery .title-border,
+.menu-delivery  .title-border {
+    margin: 0 auto;
+}
+
+.subtitle {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* cafe.html */
+.intro-cafe {
+    background: url(../img/cafe/cafe-intro.png) center no-repeat;
+    padding-top: 175px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.intro-cafe img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.circle-item {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);    
+    border: 8px solid rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    position: relative;
+    width: 281px;
+    height: 281px;
+}
+
+.intro-cafe .circle-item {
+    margin-bottom: 120px;
+}
+
+.intro-cafe p {
+    margin-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Cony Regular';
+}
+
+.reverse .description-item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.reverse .description-item:nth-child(2n) img {
+    margin-right: 35px;
+}
+
+.reverse .description-item:nth-child(2n) .description-column-left::after {
+    right: 45px;
+}
+
+.reverse .description-text {
+    width: 450px;
+}
+
+.reverse img {
+    max-width: 520px;
+    padding-right: 0;
+    margin-right: 70px;
+}
+
+.reverse .description-text {
+    font-size: 20px;
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.advantages-list li {
+    position: relative;
+    text-align: center;
+    background-color: #2f2828;
+    position: relative;
+    width: 275px;
+    height: 230px;
+}
+
+.reverse .description-column-left {
+    padding-left: 0;
+}
+
+.reverse .description-item {
+    margin-left: 70px;
+}
+
+.advantages-list img {
+    margin-top: 40px;
+    margin-bottom: 20px;
+} 
+
+.advantages-list h3 {
+    position: absolute;
+    margin: 0;
+
+    bottom: 20px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);    
+}
+
+.banner {
+    background: url(../img/cafe/week-amerikano.png) center no-repeat;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 160px;
+    margin-bottom: 158px;
+}
+
+.banner-text {
+    padding-top: 23px;
+    padding-bottom: 13px;
+    position: relative;
+    width: 360px;
+    text-align: center;
+    background-color: #2f2828;
+}
+
+.banner-text h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #e4b160;
+    margin: 0;
+}
+
+.banner-text::after {
+    top: 11px;
+    left: 0;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #e4b160;
+    width: 100%;
+}
+
+.banner-text::before {
+    top: 117px;
+    left: 0;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #e4b160;
+    width: 100%;
+}
+
+.banner-text p {
+    font-size: 18px;
+    color: white;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.header-footer-cafe,
+.header-footer-cafe .nav-menu {
+    background-color: #2f2828;
+}
+
+.main-cafe {
+    background-color: #151111;
+}
+
+/* restaurant.html */
+.intro-restaurant {
+    background: url(../img/restaurant/restaurant-intro.jpg) center no-repeat;
+}
+
+.intro-restaurant p {
+    width: 650px;
+    font-family: "Minion Pro";
+    font-size: 60px;
+    margin: 0;
+    padding: 27px 70px 30px 40px;
+    background-color: #491052;
+}
+
+.header-footer-restaurant,
+.header-footer-restaurant .nav-menu {
+    background-color: #491052;
+}
+
+.main-restaurant {
+    background-color: #100512;
+}
+
+.main-restaurant .advantages-list li {
+    background-color: #491052;
+}
+
+.banner-restaurant img {
+    height: 442px;
+    width: 1033px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+
+/*fish.html*/
+
+.header-footer-fish,
+.header-footer-fish .nav-menu {
+    background-color: #5e5269;
+}
+
+.main-fish {
+    background-color: #24222c;
+}
+
+.main-fish .advantages-list li {
+    background-color: #5e5269;
+}
+
+.intro-fish {
+    padding-top: 150px;
+    padding-bottom: 110px;
+    margin-bottom: 50px;
+    background: url(../img/fish/fish-intro.png) center no-repeat;
+}
+
+.intro-fish img {
+    display: inline-block;
+    width: 319px;
+    margin-bottom: 50px;
+}
+
+.intro-fish p {
+    width: 675px;
+    font-family: "Minion Pro";
+    font-size: 48px;
+    margin: 0;
+    padding: 24px 70px 20px 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #5e5269;
+}
+
+/* bar.html */
+.header-footer-bar,
+.header-footer-bar .nav-menu,
+.main-bar .advantages-list li  {
+    background-color: #9e3526;
+}
+
+.main-bar {
+    background-color: #000000;
+}
+
+.bar-intro {
+    padding-top: 140px;
+    padding-bottom: 110px;
+    background: url(../img/bar/bar-intro.jpg) center no-repeat;
+    background-size: 100%;
+}
+
+.bar-intro img {
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 128px;
+}
+
+.bar-intro p {
+    font-family: "Minion Pro";
+    font-weight: 900;
+    font-size: 19px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* veranda.html */
+
+.header-footer-veranda,
+.header-footer-veranda .nav-menu,
+.main-veranda .advantages-list li  {
+    background-color: #3a0401;
+}
+
+.main-veranda {
+    background-color: #060001;
+}
+
+.intro-veranda {
+    background: url(../img/veranda/veranda-intro.png) center no-repeat;
+    background-size: 100%;
+}
+
+.intro-veranda p {
+    background-color: #3a0401;
+}
+
+.intro-veranda img {
+    width: 182px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-veranda .circle-item {
+    width: 274px;
+    height: 274px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1170px) {
+    .container {
+        width: 960px;
+        padding: 0 10px;
+        margin: 0 auto
+    }
+
+    .text {
+        width: auto;
+    }
+
+    .footer-column-left {
+        padding-left: 0;
+    }
+
+    .site-navigation li:after {
+        content: "";
+        position: absolute;
+        right: -23px;
+        width: 1px;
+        height: 21px;  
+        background-color: white;
+    }
+
+    .services-list {
+        justify-content: space-around;
+    }
+
+    .announcement {
+        padding: 0;
+    }
+  
+    .footer .site-navigation li:after {
+        position: relative;
+    }
+
+    .footer-column-left {    
+        margin-right: auto;
+    }
+
+    .banner {
+        margin: 0;
+        margin-bottom: 70px;
+    }
+    .reverse .description-item {
+        margin-left: 0;
+    }
+
+    .reverse img {
+        margin-right: 0;
+        max-width: 465px
+    }
+
+    .reverse .description-item:nth-child(2n) .description-text {
+        width: auto;
+    }
+
+    .reverse .description-item:nth-child(2n) .description-column-left {
+        margin-right: 0;
+    }
+
+    .reverse .description-item:nth-child(2n) img {
+        margin-right: 20px;
+    }
+
+    .reverse .description-item:nth-child(2n) .description-column-left::after {
+        right: 0;
+    }
+
+    .advantages-list {
+        grid-template-columns: repeat(2, 1fr);        
+        grid-column-gap: 149px;
+        width: 700px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .intro-veranda {
+        background-size: auto;
+    }
+
+}
+
+@media (max-width: 980px) {
+    .container {
+        width: 620px;
+        padding: 0 10px;
+        margin: 0 auto
+    }
+
+    .footer .container {
+        flex-direction: column-reverse;
+    }
+
+    .description-list img {
+        padding: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .phone-adress {
+        text-align: center;
+    }
+
+    .footer-column-left {
+        margin-right: 0;
+        width: auto;
+    }
+
+    .services-list {
+        justify-content: space-between;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    .map {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+
+    .footer .site-navigation {
+        display: none;
+    }
+
+    .title-border {
+        margin: 0 auto;
+    }
+
+    .description-item {
+        flex-direction: column-reverse;
+    }
+
+    .description-column-left {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .site-navigation li:after {
+        position: relative;
+    }
+
+    .site-navigation {
+        font-size: 14px;
+    }
+
+    .reverse .description-text {
+        width: auto;
+    }
+
+    .reverse .description-text {
+        font-size: 20px;
+    }
+
+    .reverse .description-item:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .reverse .description-item:nth-child(2n) img {
+        margin-right: 0px;
+    }
+
+    .advantages-list {
+        width: 620px;
+        grid-column-gap: 50px;
+    }
+
+    .intro-cafe p {
+        font-size: 36px;
+    }
+
+    .banner-restaurant img {
+        height: auto;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .intro-restaurant p {
+        box-sizing: border-box;
+        width: 100%;
+    }    
+    .intro-fish p {
+        font-size: 38px;
+        width: auto;
+    }
+
+    .bar-intro {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .bar-intro img {
+        width: 320px;
+    }
+    
+    .bar-intro p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .logo-and-burger {
+        display: flex;
+        justify-content: space-between;
+    }
+    .services-list {
+        justify-content: space-around;
+    }
+
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .header-burger span{
+        position: absolute;
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-burger:before,
+    .header-burger::after {
+        content:"";
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-burger:before {
+        top: 0;
+    }
+
+    .header-burger::after {
+        bottom: 0;
+    }
+
+    .header-burger.active:before {
+         transform: rotate(45deg);
+         top: 9px
+    }
+
+    .header-burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px
+   }
+
+   .header-burger.active span {
+       transform: scale(0);
+   }
+
+    .header-top {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .social-search {
+        margin: 0 auto;
+    }
+    
+    .search-delivery {
+       margin-right: 0px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .logo {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        display: none;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000610;
+    }
+
+    .lock {
+        overflow: hidden;
+    }
+
+    .nav-menu.active {
+        display: block;
+        top: 78px;
+        z-index: 333;
+        overflow: auto;
+    }
+
+    .site-navigation {
+        display: block;
+        font-size: 20px;
+        padding: 40px 10px 20px 10px;
+    }
+
+    .logo-and-burger {
+        margin-right: 0;
+    }
+
+    .footer .social-search {
+        margin: 0;
+    }
+
+    .site-navigation li {
+        margin-bottom: 20px;
+    }
+    .intro {
+        padding-top: 70px;
+        margin-bottom: 40px;
+    }
+    .wish {
+        font-size: 32px;
+    }
+    .title-border {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .intro-cafe {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .intro-cafe .circle-item {
+        margin-bottom: 20px;
+    }
+
+    .intro-cafe p {
+        font-size: 20px;
+    }
+
+    .banner {
+        padding-left: 0;
+    }
+
+    .banner-text {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .banner-text p {
+        font-size: 17px;
+    }
+
+    .advantages-list {
+        width: auto;
+        grid-column-gap: 10px;
+    }
+
+    .advantages-list li {
+        width: auto;
+        height: 200px;
+    }
+
+    .advantages-list img {
+        width: 75px;
+    }
+
+    .advantages-list h3 {
+        font-size: 17px;
+    }
+
+    .nobr {
+        white-space: normal;
+    }
+
+    .intro-restaurant p {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }    
+
+    .intro-fish p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .bar-intro {
+        background-size: auto;
+    }
+
+    .intro-veranda {
+        text-align: center;
+    }
+
+    .intro-fish p {
+        font-size: 18px;
+    }
+    
+
+
+}
+
+@media (max-width: 440px) {
+    .service-item {
+        width: 110px;
+        height: 110px;
+        border-width: 4px;
+    }
+
+    .service-item img {
+        width: 83px;
+    }
+}
